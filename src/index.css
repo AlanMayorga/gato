@@ -1,0 +1,119 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+button {
+  padding: .5rem 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #242424;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.board .cell {
+  cursor: pointer;
+}
+
+.cell {
+  display: grid;
+  place-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  border: 2px solid white;
+  padding: 1rem;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.turn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 1rem;
+}
+
+.turn .cell {
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.is-turn {
+  background: rgb(88, 225, 120);
+  color: #242424;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog {
+  max-width: 650px;
+  padding: 40px 70px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px) saturate(1.5);
+}
+
+dialog .cell {
+  margin: 1.4rem auto;
+}
